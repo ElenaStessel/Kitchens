@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SegoeUIItalic";
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
+    src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+    url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    padding: 80px 110px;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.logo {
+    margin-bottom: 50px;
+}
+
+.title {
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 64px;
+    font-family: "SegoeUIItalic", sans-serif;
+    text-shadow: 0 6px 6px rgba(0,0,0,0.26);
+}
+
+.title__kitchen {
+    color: #f5d156;
+    font-size: 101px;
+    font-weight: bold;
+}
+
+.form {
+    padding: 35px;
+    width: 564px;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+
+.form__title {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "OpenSansRegular", sans-serif;
+    line-height: 30px;
+}
+
+.form__title_bold {
+    font-weight: bold;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: #cccccc solid 1px;
+    color: #4a4d4e;
+}
+
+.input:focus {
+    box-shadow: 0 0 5px #e14115;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+}
+
+input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+input::-moz-placeholder {
+    text-align: center;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.31);
+    color: #ffffff;
+    background-color: #e14115;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #e14115;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+@media (max-width: 1400px) {
+    .wrapper {
+        padding: 55px 80px;
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+        font-size: 48px;
+    }
+
+    .title__kitchen {
+        font-size: 76px;
+    }
+
+    .form {
+        padding: 30px;
+        width: 423px;
+        font-size: 18px;
+    }
+
+    .form__title {
+        margin-bottom: 20px;
+        line-height: 24px;
+    }
+
+    .input{
+        padding: 12px 20px;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        margin-top: 5px;
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .wrapper {
+        padding: 45px 70px;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .title__kitchen {
+        font-size: 55px;
+    }
+
+    .form {
+        padding: 25px;
+        width: 390px;
+        font-size: 16px;
+    }
+
+    .form__title {
+        margin-bottom: 15px;
+        line-height: inherit;
+    }
+
+    .input{
+        padding: 8px 15px;
+        margin-bottom: 12px;
+    }
+
+    .button {
+        margin-top: 5px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        padding: 40px 60px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    .title__kitchen {
+        font-size: 45px;
+    }
+
+    .form {
+        padding: 20px;
+        width: 380px;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        padding: 10% 5%;
+        background-position: 20% 50%;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .title__kitchen {
+        font-size: 40px;
+    }
+
+    .form {
+        padding: 20px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .form__title {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 330px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .form {
+        padding: 20px;
+        font-size: 12px;
+    }
+}

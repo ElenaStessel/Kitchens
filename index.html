@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kitchens</title>
+    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/normalise.css" >
+</head>
+<body>
+<div class="wrapper">
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="title">Получите на почту<br>советы по выбору <br><span class="title__kitchen">Кухни!</span></div>
+    <div class="form">
+        <div class="form__title">Ваш <span class="form__title_bold">телефон будет использован</span> для<br>
+            подтверждения <span class="form__title_bold">получения каталога</span></div>
+        <form action="/send-email.php" method="post" class="input-wrapper">
+            <input class="input" id="input-tel" name="phone" type="tel" placeholder="Телефон" required>
+            <input class="input" type="email" name="email" placeholder="E-mail" required>
+            <button class="button">Получить каталог</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

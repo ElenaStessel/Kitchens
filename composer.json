@@ -1,0 +1,13 @@
+{
+    "name": "lena/kitchens",
+    "type": "project",
+    "authors": [
+        {
+            "name": "ElenaStessel",
+            "email": "olenikovaelena@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}
