@@ -20,11 +20,6 @@ $message = (new Swift_Message('Письмо'))
   ->setTo($sentTo)
   ->setBody('Телефон: ' . $phone . '. Email: ' . $email);
 
-try {
 $result = $mailer->send($message);
-} catch (\Exception $e) {
-    var_dump($e);
-    die;
-}
 
 header('Location: /');
